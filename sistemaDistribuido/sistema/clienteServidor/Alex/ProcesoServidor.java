@@ -78,7 +78,7 @@ public class ProcesoServidor extends Proceso{
                 imprimeln("llenando los campos necesarios");
                 imprimeln("Señalando al núcleo para ser envío de mensaje");
                 imprimeln("enviando respuesta");
-                Pausador.pausa(2000);
+                Pausador.pausa(5000);
                 Nucleo.send(merge_bytes_int(solServidor),respServidor);
             }
             

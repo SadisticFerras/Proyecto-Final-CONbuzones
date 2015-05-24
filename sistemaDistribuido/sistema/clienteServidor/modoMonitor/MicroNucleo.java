@@ -133,7 +133,7 @@ public final class MicroNucleo extends MicroNucleoBase{
 		}
 		else{
 			byte[] buffer = buzon.dameMensaje();
-			imprimeln("Tomando mensaje de cliente: "+buffer[0]);
+			imprimeln("Tomando mensaje de cliente: " + merge_bytes_int(buffer, 0, 4));
 			System.arraycopy(buffer, 0, message, 0, buffer.length);
 		}
 	}
